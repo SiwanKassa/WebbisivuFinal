@@ -16,10 +16,11 @@ const mediaUrl = 'http://media.mw.metropolia.fi/wbma/uploads/';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 555,
   },
   media: {
     height: 300,
+    width: 300,
     objectFit: 'cover',
   },
 };
@@ -34,7 +35,7 @@ const Profile = (props) => {
   return (
       <React.Fragment>
         <div style={{
-          backgroundImage: 'url(\'http://users.metropolia.fi/~joonaesa/pics/prof.jpg\')',
+          backgroundImage: "url('http://users.metropolia.fi/~joonaesa/pics/prof.jpg')",
           width: "100vw", height: "100vh", backgroundSize: "cover", backgroundRepeat: "no-repeat"
         }}>
           <div className="profiili">
@@ -49,7 +50,7 @@ const Profile = (props) => {
             <CardContent>
             */}
                 <CardMedia className={classes.media}
-                           image={'http://media.mw.metropolia.fi/wbma/uploads/205ea9fdbaddb635ad113fc61471f610.png'} title={username}/>
+                           image={'http://users.metropolia.fi/~joonaesa/pics/temporary-profile-placeholder-300x300.jpg'} title={username}/>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
                     Username: {username}
